@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 /* poppins-regular - latin */
 @font-face {
   font-display: swap;
@@ -166,4 +167,5 @@
   .cards img {
     @apply rounded-2xl object-cover h-48 w-full;
   }
+
 }
