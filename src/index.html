@@ -1,240 +1,305 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../dist/output.css" />
-  </head>
-  <body>
-    <!-- >> header -->
-    <header class="py-7 fixed shadow-md w-full z-50">
-      <div class="container">
-        <!-- wrapper -->
-        <div class="flex justify-between items-center">
-          <!-- logo -->
-          <div>
-            <img class="w-33" src="../IMG/LOGO.png" alt="Get Pizza logo" />
-          </div>
-          <!-- nav -->
-          <nav class="headerNav" aria-label="Main navigation">
-            <ul>
-              <li><a href="./about.html">Destination</a></li>
-              <li><a href="./menu.html">Travel Plan</a></li>
-              <li><a href="./contact.html">Inspiration</a></li>
-            </ul>
-          </nav>
 
-          <a href="#" class="btn btn--green hidden md:block">Sign in</a>
-          <!-- toggle menu (hamburger) -->
-          <div
-            class="toggleMenu"
-            aria-label="Toggle navigation menu"
-            role="button"
-            tabindex="0"
-          >
-            <span></span>
-            <span></span>
-          </div>
-          <!-- overlay backdrop -->
-          <div class="transparent"></div>
-        </div>
-      </div>
-    </header>
-    <!-- banner -->
-    <section class="md:pt-44 md:py-20">
-      <div class="container">
-        <!-- wrapper -->
-        <div class="grid md:grid-cols-2">
-          <!-- left -->
-          <div class="md:items-center md:justify-center md:">
-            <!-- first intro -->
-            <div class="md:mt-16">
-              <h1 class="text-primary leading-none">
-                Uncover the <br />
-                World's
-                <span class="opacity-70">Hidden</span> Wonders
-                <img
-                  class="inline-block"
-                  src="../img/banner-line.png"
-                  alt="signature-img"
-                />
-              </h1>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../dist/output.css" />
+</head>
 
-            <p class="md:mt-10 md:max-w-lg">
-              Find the unique moments and hidden gems that ignite unforgettable
-              experiences. From rare encounters to remarkable destinations, we
-              help you uncover the spark that turns every trip into a cherished
-              story.
-            </p>
-
-            <div class="md:flex md:items-center md:mt-10">
-              <a href="#" class="btn btn--green">Plan your trip</a>
-              <img
-                class="md:object-fill md:absolute md:ml-36"
-                src="../img/airplane.png"
-                alt="airplane-img"
-              />
-            </div>
-          </div>
-
-          <!-- right -->
-          <div>
-            <!-- background map -->
-            <div>
-              <img
-                class="md:w-3xl md:absolute md:-z-30 md:left-210 md:bottom-80"
-                src="../img/map.png"
-                alt="map-img"
-              />
-            </div>
-            <!-- absolute front grid -->
-            <div
-              class="md:grid md:grid-cols-[20rem_40rem] md:inset-0 md:z-20 md:mt-25"
-            >
-              <!-- left big image spans 2 rows -->
-              <img
-                class="row-span-2 h-70px object-cover rounded-2xl my-auto"
-                src="../img/banner1.png"
-                alt="img landscape"
-              />
-              <!-- right top -->
-              <img
-                class="object-cover rounded-2xl"
-                src="../img/banner2.png"
-                alt="img landscape 2"
-              />
-              <!-- right bottom -->
-              <img
-                class="object-cover rounded-2xl mt-7"
-                src="../img/banner3.png"
-                alt="girl image"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- top destinations -->
-    <section class="bg-primary py-20 text-white text-justify">
-      <div class="container">
-        <!-- title -->
+<body>
+  <!-- >> header -->
+  <header class="py-7 fixed shadow-md w-full z-50">
+    <div class="container">
+      <!-- wrapper -->
+      <div class="flex justify-between items-center">
+        <!-- logo -->
         <div>
-          <h2 class="text-white">Top Destinations</h2>
+          <img class="w-33" src="../IMG/LOGO.png" alt="Get Pizza logo" />
         </div>
-        <!-- wrapper -->
-        <div class="grid grid-cols-2 gap-7 mt-10">
-          <!-- left -->
-          <div class="grid grid-cols-2 grid-rows-2 gap-4">
-            <!-- card 1 -->
-            <div class="relative">
-              <img
-                class="h-85 w-full rounded-2xl object-cover"
-                src="../img/destination-1.jpg"
-                alt="destination 1"
-              />
-              <div
-                class="absolute bottom-0 left-0 p-4 rounded-b-2xl w-full bg-gradient-to-t from-black/70 to-transparent"
-              >
-                <p class="text-white font-bold">Golden Bridge, Bà Nà Hills</p>
-                <p class="text-white text-sm opacity-70">Vietnam</p>
-              </div>
-            </div>
+        <!-- nav -->
+        <nav class="headerNav" aria-label="Main navigation">
+          <ul>
+            <li><a href="./about.html">Destination</a></li>
+            <li><a href="./menu.html">Travel Plan</a></li>
+            <li><a href="./contact.html">Inspiration</a></li>
+          </ul>
+        </nav>
 
-            <!-- card 2 -->
-            <div class="relative">
-              <img
-                class="h-85 w-full rounded-2xl object-cover"
-                src="../img/destination-2.jpg"
-                alt="destination 2"
-              />
-              <div
-                class="absolute bottom-0 left-0 p-4 rounded-b-2xl w-full bg-gradient-to-t from-black/70 to-transparent"
-              >
-                <p class="text-white font-bold">Hot Air Balloon Cappadocia</p>
-                <p class="text-white text-sm opacity-70">Turkey</p>
-              </div>
-            </div>
-
-            <!-- card 3 -->
-            <div class="relative">
-              <img
-                class="h-85 w-full rounded-2xl object-cover"
-                src="../img/destination-3.jpg"
-                alt="destination 3"
-              />
-              <div
-                class="absolute bottom-0 left-0 p-4 rounded-b-2xl w-full bg-gradient-to-t from-black/70 to-transparent"
-              >
-                <p class="text-white font-bold">Dubrovnik</p>
-                <p class="text-white text-sm opacity-70">Croatia</p>
-              </div>
-            </div>
-
-            <!-- card 4 -->
-            <div class="relative">
-              <img
-                class="h-85 w-full rounded-2xl object-cover"
-                src="../img/destination-4.jpg"
-                alt="destination 4"
-              />
-              <div
-                class="absolute bottom-0 left-0 p-4 rounded-b-2xl w-full bg-gradient-to-t from-black/70 to-transparent"
-              >
-                <p class="text-white font-bold">Sydney Harbour Bridge</p>
-                <p class="text-white text-sm opacity-70">Australia</p>
-              </div>
-            </div>
+        <a href="#" class="btn btn--green hidden md:block">Sign in</a>
+        <!-- toggle menu (hamburger) -->
+        <div class="toggleMenu" aria-label="Toggle navigation menu" role="button" tabindex="0">
+          <span></span>
+          <span></span>
+        </div>
+        <!-- overlay backdrop -->
+        <div class="transparent"></div>
+      </div>
+    </div>
+  </header>
+  <!-- banner -->
+  <section class="md:pt-44 md:py-20">
+    <div class="container">
+      <!-- wrapper -->
+      <div class="grid md:grid-cols-2">
+        <!-- left -->
+        <div class="md:items-center md:justify-center md:">
+          <!-- first intro -->
+          <div class="md:mt-16">
+            <h1 class="text-primary leading-none">
+              Uncover the <br />
+              World's
+              <span class="opacity-90">Hidden</span> Wonders
+              <img class="inline-block" src="../img/banner-line.png" alt="signature-img" />
+            </h1>
           </div>
-          <!-- right -->
-          <div class="items-center mt-4">
-            <p class="mt-3">
-              Some of the world's most awe-inspiring destinations combine
-              breathtaking natural beauty with remarkable architecture and rich
-              history. One such place is the **Golden Bridge** in Bà Nà Hills,
-              Vietnam. This spectacular bridge, held up by enormous stone hands,
-              creates a surreal scene against the backdrop of mist-covered
-              mountains and lush forests. It has quickly become a must-see for
-              travelers seeking a mix of modern design and natural wonder. A
-              short trip from this iconic bridge, the Bà Nà Hills area also
-              offers stunning panoramic views and the world's longest cable car
-              ride, adding to the overall experience of this remarkabie
-              location.
-            </p>
 
-            <p class="mt-3">
-              **Dubrovnik**", Croatia, also stands out as a top destination,
-              with its ancient city walls and vibrant old town. Known as the
-              "Pearl of the Adriatic," Dubrovnik offers a step back in time,
-              with cobblestone streets, centuries-old fortresses, and medieval
-              architecture that have earned it UNESCO World Heritage status. The
-              view from the city walls is nothing short of spectacular,
-              providing a sweeping panorama of the turquoise sea and terracotta
-              rooftops. Dubrovnik's charming atmosphere, coupled with its
-              cultural and historical significance, makes it an ideal
-              destination for history buffs and wanderers alike.
-            </p>
+          <p class="md:mt-10 md:max-w-lg">
+            Find the unique moments and hidden gems that ignite unforgettable
+            experiences. From rare encounters to remarkable destinations, we
+            help you uncover the spark that turns every trip into a cherished
+            story.
+          </p>
 
-            <p class="mt-3">
-              For those seeking adventure and scenic thrills, the **Sydney
-              Harbour Bridge** in Australia offers an exhilarating climb that
-              rewards you with sweeping views of Sydney's iconic skyline,
-              including the Opera House and the harbor. The climb provides a
-              unique perspective of the city and its stunning waterfront.
-              Meanwhile, in **Cappadocia**, Turkey, visitors can experience one
-              of the most surreal landscapes on Earth. Taking a **hot air
-              balloon ride** at sunrise over the fairy chimneys and rock
-              formations of Cappadocia offers a magical aerial view that's truly
-              one of a kind. Whether you're looking for architectural marvels,
-              historical landmarks, or unforgettable natural landscapes, these
-              destinations promise experiences that will captivate and inspire.
-            </p>
+          <div class="md:flex md:items-center md:mt-10">
+            <a href="#" class="btn btn--green">Plan your trip</a>
+            <img class="md:object-fill md:absolute md:ml-36" src="../img/airplane.png" alt="airplane-img" />
+          </div>
+        </div>
+
+        <!-- right -->
+        <div>
+          <!-- background map -->
+          <div>
+            <img class="md:w-3xl md:absolute md:-z-30 md:left-210 md:bottom-80" src="../img/map.png" alt="map-img" />
+          </div>
+          <!-- absolute front grid -->
+          <div class="md:grid md:grid-cols-[20rem_40rem] md:inset-0 md:z-20 md:mt-25">
+            <!-- left big image spans 2 rows -->
+            <img class="row-span-2 h-70px object-cover rounded-2xl my-auto" src="../img/banner1.png"
+              alt="img landscape" />
+            <!-- right top -->
+            <img class="object-cover rounded-2xl" src="../img/banner2.png" alt="img landscape 2" />
+            <!-- right bottom -->
+            <img class="object-cover rounded-2xl mt-7" src="../img/banner3.png" alt="girl image" />
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- top destinations -->
+  <section class="bg-primary py-20 text-white text-justify">
+    <div class="container">
+      <!-- title -->
+      <div>
+        <h2 class="text-white">Top Destinations</h2>
+      </div>
+      <!-- wrapper -->
+      <div class="grid grid-cols-2 gap-7 mt-10">
+        <!-- left -->
+        <div class="grid grid-cols-2 grid-rows-2 gap-4">
+          <!-- card 1 -->
+          <div class="relative">
+            <img class="h-85 w-full rounded-2xl object-cover" src="../img/destination-1.jpg" alt="destination 1" />
+            <!-- Full image overlay -->
+            <div class="absolute inset-0 bg-black/50 rounded-2xl"></div>
+            <!-- Text overlay at bottom -->
+            <div
+              class="absolute bottom-0 left-0 p-4 rounded-b-2xl w-full bg-gradient-to-t from-black/70 to-transparent">
+              <p class="text-white font-bold">Golden Bridge, Bà Nà Hills</p>
+              <p class="text-white text-sm opacity-70">Vietnam</p>
+            </div>
+          </div>
 
-    <script src="../js/toggle_menu.js"></script>
-  </body>
+          <!-- card 2 -->
+          <div class="relative">
+            <img class="h-85 w-full rounded-2xl object-cover" src="../img/destination-2.jpg" alt="destination 2" />
+            <div class="absolute inset-0 bg-black/50 rounded-2xl"></div>
+            <div
+              class="absolute bottom-0 left-0 p-4 rounded-b-2xl w-full bg-gradient-to-t from-black/70 to-transparent">
+              <p class="text-white font-bold">Hot Air Balloon Cappadocia</p>
+              <p class="text-white text-sm opacity-70">Turkey</p>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="relative">
+            <img class="h-85 w-full rounded-2xl object-cover" src="../img/destination-3.jpg" alt="destination 3" />
+            <div class="absolute inset-0 bg-black/50 rounded-2xl"></div>
+            <div
+              class="absolute bottom-0 left-0 p-4 rounded-b-2xl w-full bg-gradient-to-t from-black/70 to-transparent">
+              <p class="text-white font-bold">Dubrovnik</p>
+              <p class="text-white text-sm opacity-70">Croatia</p>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="relative">
+            <img class="h-85 w-full rounded-2xl object-cover" src="../img/destination-4.jpg" alt="destination 4" />
+            <div class="absolute inset-0 bg-black/50 rounded-2xl"></div>
+            <div
+              class="absolute bottom-0 left-0 p-4 rounded-b-2xl w-full bg-gradient-to-t from-black/70 to-transparent">
+              <p class="text-white font-bold">Sydney Harbour Bridge</p>
+              <p class="text-white text-sm opacity-70">Australia</p>
+            </div>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="items-center mt-4">
+          <p class="mt-3">
+            Some of the world's most awe-inspiring destinations combine
+            breathtaking natural beauty with remarkable architecture and rich
+            history. One such place is the **Golden Bridge** in Bà Nà Hills,
+            Vietnam. This spectacular bridge, held up by enormous stone hands,
+            creates a surreal scene against the backdrop of mist-covered
+            mountains and lush forests. It has quickly become a must-see for
+            travelers seeking a mix of modern design and natural wonder. A
+            short trip from this iconic bridge, the Bà Nà Hills area also
+            offers stunning panoramic views and the world's longest cable car
+            ride, adding to the overall experience of this remarkabie
+            location.
+          </p>
+
+          <p class="mt-3">
+            **Dubrovnik**", Croatia, also stands out as a top destination,
+            with its ancient city walls and vibrant old town. Known as the
+            "Pearl of the Adriatic," Dubrovnik offers a step back in time,
+            with cobblestone streets, centuries-old fortresses, and medieval
+            architecture that have earned it UNESCO World Heritage status. The
+            view from the city walls is nothing short of spectacular,
+            providing a sweeping panorama of the turquoise sea and terracotta
+            rooftops. Dubrovnik's charming atmosphere, coupled with its
+            cultural and historical significance, makes it an ideal
+            destination for history buffs and wanderers alike.
+          </p>
+
+          <p class="mt-3">
+            For those seeking adventure and scenic thrills, the **Sydney
+            Harbour Bridge** in Australia offers an exhilarating climb that
+            rewards you with sweeping views of Sydney's iconic skyline,
+            including the Opera House and the harbor. The climb provides a
+            unique perspective of the city and its stunning waterfront.
+            Meanwhile, in **Cappadocia**, Turkey, visitors can experience one
+            of the most surreal landscapes on Earth. Taking a **hot air
+            balloon ride** at sunrise over the fairy chimneys and rock
+            formations of Cappadocia offers a magical aerial view that's truly
+            one of a kind. Whether you're looking for architectural marvels,
+            historical landmarks, or unforgettable natural landscapes, these
+            destinations promise experiences that will captivate and inspire.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- latest stories -->
+  <section class="py-20">
+    <div class="container">
+      <h2 class="text-primary mb-10">Latest Stories</h2>
+      <!-- wrapper -->
+      <div class="grid grid-cols-2 gap-8">
+        <!-- left -->
+        <div class="">
+          <img class="w-full h-150 object-cover rounded-2xl" src="../img/stories.jpg" alt="Latest Story 1">
+
+          <h4 class="mt-10 text-primary">
+            Los Angeles food & drink guide: 10 things to try in Los Angeles, California
+          </h4>
+          <p>Aug 19, 2024 4min read</p>
+          <p>It seems that in California, almost any problem can be solved with a combination of avocados, yoga, and
+            dogs: After all, food, health, and...</p>
+        </div>
+
+        <!-- right -->
+        <div>
+          <!-- wraappers pics -->
+          <!-- 1 -->
+          <div class="flex gap-4">
+            <!-- img -->
+            <div>
+              <img class=" w-59 h-70" src="../img/stories-1.png" alt="Latest Story 1">
+            </div>
+            <div class="items-center my-auto">
+              <!-- content -->
+              <small>Shopping</small>
+              <h4 class="text-primary font-bold max-w-sm">15 South London Markets You'll Love: Best Markets in South
+                London</h4>
+              <small>Aug 15.20246 min read</small>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="flex gap-4 mt-7">
+            <!-- img -->
+            <div>
+              <img class=" w-full h-70" src="../img/stories-2.png" alt="Latest Story 2">
+            </div>
+            <div class="items-center my-auto">
+              <!-- content -->
+              <small>Hotels</small>
+              <h4 class="text-primary font-bold max-w-md">10 incredible hotels around the world you can book with points
+                in 2024</h4>
+              <small>Aug 15.20246 min read</small>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="flex gap-4 mt-7">
+            <!-- img -->
+            <div>
+              <img class=" w-72 h-70 rounded-3xl" src="../img/stories-3.jpg" alt="Latest Story 3">
+            </div>
+            <div class="items-center my-auto">
+              <!-- content -->
+              <small>Travel Budget</small>
+              <h4 class="text-primary font-bold max-w-lg">Visiting Chicago on a Budget:
+                Affordable Eats and <br>
+                Attraction Deals</h4>
+              <small>Aug 15.20246 min read</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- beyond borders -->
+  <section class="bg-primary py-12 text-white text-left">
+    <div class="container">
+      <!-- wrapper -->
+      <div class="grid grid-cols-2 gap-8">
+        <!-- left -->
+        <div>
+          <h4 class="mb-10">Beyond Borders Highlights</h4>
+          <!-- img and name -->
+          <div class="flex gap-3">
+            <div>
+              <img class="w-32 h-32 rounded-full object-cover " src="../img/banner3.png" alt="girl">
+            </div>
+            <div class="my-auto">
+              <h4>Sellah Belle</h4>
+              <p class="font-bold">Dolores,Quezon</p>
+            </div>
+          </div>
+          <h4 class="mt-10 max-w-lg">An Unforgettable Journey Through Turkey</h4>
+          <p class="mt-3 max-w-xl">Thanks to Beyond Bordera, my trip to Turkey was truly magical. Their expert guides
+            and
+            insider tips led me
+            to hidden gems and must-see spots I would have missed otherwise. The suggested itinerary made exploring
+            Istanbul's vibrant streets and Cappadocia's stunning landscapes effortless. I'm already looking forward to
+            my next adventure with Beyond Borders!</p>
+        </div>
+        <!-- right -->
+        <div class="flex gap-5">
+          <img class="w-75 h-130 object-cover rounded-3xl" src="../img/destination-3.jpg" alt="">
+          <img class="w-40  h-130 object-cover rounded-3xl" src="../img/destination-2.jpg" alt="">
+          <img class="w-40  h-130 object-cover rounded-3xl" src="../img/destination-1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/toggle_menu.js"></script>
+</body>
+
 </html>
