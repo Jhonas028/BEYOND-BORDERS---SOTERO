@@ -148,7 +148,7 @@
   }
 
   .transparent.open {
-    @apply block fixed h-screen w-full backdrop-blur-sm left-0 top-80 duration-300 overflow-y-hidden;
+    @apply block fixed h-screen w-full backdrop-blur-sm left-0 top-69 duration-300 overflow-y-hidden;
   }
 
   /* button or anchors */
